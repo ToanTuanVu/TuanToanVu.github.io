@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tuan Toan Vu</title>
+    <Link rel="stylesheet" href="index.css">
+    </Link>
+    <script src="https://kit.fontawesome.com/5045c3bba7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <a src="images/logo_header" class="logo">Tuan Vu</a>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Web developer
+                </p>
+                <h1>Hi, I'm <span>Tuan</span><br> From Viet Nam</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------- -->
+    <div id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_3316.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate web developer with expertise in creating responsive and engaging websites and
+                        web applications. Proficient in HTML, CSS, JavaScript, Reactjs, Nodejs, Java, and modern
+                        web frameworks. Committed to delivering top-notch user experiences through clean code
+                        and continuous learning. Ready to contribute creativity and technical skills to innovative
+                        projects and teams.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-link active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="openTab('experiences')">Experiences</p>
+                        <p class="tab-link" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content  active-tab" id="skills">
+                        <ul>
+                            <li><span>Reactjs</span></li>
+                            <li><span>Nodejs</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Git</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experiences">
+                        <ul>
+                            <li><span>TECHRES.VN - ANDROID
+                                    APPICATION DEVELOPER
+                                    HO CHI MINH, VIET NAM</span><br>Develop an application for restaurant owners to
+                                check income by day, and some features.
+                                Leveraged the Android SDK to create custom views
+                                and animations, enhancing the user experience
+                                Integrated APIs and third-party services to expand
+                                the functionality of the app and improve user
+                                engagement</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>JAVA PROGRAMMER CERTIFICATE
+                                </span><br>ATLANTA TECHNICAL COLLEGE,
+                                ATLANTA</li>
+                            <li><span>UNIVERSITY OF SCIENE
+                                </span><br> HO CHI MINH CITY, VIET NAM</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------sevices-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Android developer</h2>
+                    <p>I have 1 year of experience working at a startup company as Android software developer from
+                        2018-2019</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web developer</h2>
+                    <p>I have some projects use Reactjs, Nodejs and MySQL. Become to a fullstack developer</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- =------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/lo_background.png" alt="">
+                    <div class="layer">
+                        <h3>Teacher Manage</h3>
+                        <p>Manage teacher, student, score, attendance... online for
+                            free. This website is used by 100+ users. Use model MVC. Use
+                            middleware for security check role by JWT. Use the editable table to
+                            help users easily add, delete, and edit information. Use docker deploy
+                            website on ubuntu VPS server.</p>
+                        <a href="https://quanlygiaoly.com" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/what-is-mobile-application.jpeg" alt="">
+                    <div class="layer">
+                        <h3>EBUY-ANDROIDAPP - SCHOOL PROJECT</h3>
+                        <p>Description: use buy or sell like e-commerce
+                            Team size: 2
+                            Language/library: Java android, Spring Framework, SQL</p>
+                        <a href="https://github.com/ebuy-android2/ebuyapp" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/IMG_3316.JPG" alt="">
+                    <div class="layer">
+                        <h3>My portfolio</h3>
+                        <p>A page introduce about myself by html,css </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+        <!-- -----------contact-------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>toantuanvu@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>(470)452-9439</p>
+                        <div class="social-icons">
+                            <a href="github.com"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/IMG_3309 4.PNG" download class="btn btn2">Download Resumes</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="name" placeholder="Your name">
+                            <input type="email" name="email" placeholder="Your email">
+                            <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> by Tuan Toan Vu</p>
+        </div>
+
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-link')
+        var tabContents = document.getElementsByClassName('tab-content')
+
+        function openTab(tabname) {
+
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link')
+            }
+
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+        function openMenu() {
+            sidemenu.style.right = '0';
+        }
+        function closeMenu() {
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+</body>
+
+</html>
